@@ -37,7 +37,6 @@ Optimal number of rounds: `r = round(π/(4θ) − 0.5)`.
 | `shots_convergence.ipynb` | How the number of shots affects accuracy: n = 3, marked `'101'`, 20 repeated runs at 10, 100, 1000 and 10 000 shots. Shows the mean stays on the theory value while the spread shrinks like 1/√shots (`figures/fig_shots_convergence_*.png`). |
 | `noise.ipynb` | Effect of gate errors: n = 3, success vs. `r` with a depolarizing noise model at CNOT error 0–0.05, both sampled (4096 shots) and exact (density-matrix). Shows the lower peak, the flattening toward random guessing and the best `r` moving earlier (`figures/fig_noise_success_vs_rounds.png`). |
 | `classical_comparison.ipynb` | Number of oracle queries: classical random search (plain Python, averaged over 10 000 searches) vs. Grover's optimal `r` and `r/P` (with retries), for N = 4 … 1024 and k = 1, 4. Shows the quadratic speed-up (`figures/fig_classical_comparison_queries.png`). |
-| `hardware_simulation.ipynb` | Hardware-realistic simulation, fully offline: n = 2, 3, 4 on the ideal simulator, the depolarizing noise model (p₂ = 0.005) and the fake backend `FakeTorino` (a saved copy of a real IBM device's layout, native gates and noise; no account or connection). Also circuit depth and 2-qubit gate counts for n = 2–5 (`figures/fig_hardware_*.png`). |
 | `requirements.txt` | Python packages needed. |
 | `figures/` | All generated plots. |
 
